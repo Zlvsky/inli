@@ -1,0 +1,50 @@
+<div id="content-home">
+
+    <div id="bg-home">
+      <div id="bg-logo">
+        <div class="single-letter reveal-first">I</div>
+        <div class="single-letter reveal-second">N</div>
+        <div class="logo-wrap">
+          <div class="z-index single-letter reveal-third">L</div><div class="animate-logo reveal-third">ight</div>
+      </div>
+        <div class="z-index single-letter reveal-fourth">I </div><div class="animate-logo reveal-fourth"> Trust</div>
+      </div>
+      <div id="logo-wrap reveal-fifth">
+        <div id="bg-description">Homemade premium quality makeup toilets</div>
+      </div>
+
+  </div>
+</div>
+
+<div id="content-stuff">
+  <div class="content-blocks">
+    <div class="content-title">Toaletka Standardowa</div>
+    <div class="content-subtitle">Deprecyzowany kazdy sczegół</div>
+    <div class="content-description"></div>
+  </div>
+
+  <div class="content-images-wrap">
+    <div class="content-images-collage">
+      <div id="content-image-first"></div>
+      <div id="content-image-second"></div>
+      <div id="content-image-third"></div>
+      <div id="content-image-fourth"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+      const parallax = document.getElementById('content-home');
+      const bgHome = document.getElementById('bg-home');
+      let currentOpacity;
+
+      window.onscroll = function(){ scrolling();}
+      function scrolling() {
+        currentScroll = document.documentElement.scrollTop / 5;
+        currentOpacity = 1 - document.documentElement.scrollTop / 400;
+        parallax.style.backgroundPosition = `center ${-currentScroll}px`;
+        bgHome.style.opacity = currentOpacity;
+        console.log(currentOpacity);
+      }
+
+</script>
