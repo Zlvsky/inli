@@ -277,6 +277,38 @@ a {
 
 }
 /* ABOUT */
+#zamowienia-button-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.zamowienia-button {
+  display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 20px;
+min-width: 60px;
+height: 25px;
+background-color: #5d9ecd;
+border-radius: 2px;
+border: none;
+text-decoration: none;
+font-size: 14px;
+color: #fff;
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+margin: 0 auto 0 auto;
+}
+.zamowienia-button:hover {
+background-color: #2e2e2e;
+cursor: pointer;
+}
 #about-content {
   width: 100%;
   height: 100%;
@@ -303,19 +335,35 @@ a {
   letter-spacing: 0.5;
   color: #444444;
   text-align: center;
+  margin-top: 8px;
 }
 #about-text {
   margin-top: 5px;
   color: #444444;
 }
 
+.contact-p {
+  margin-top: 20px;
+  height: 25px;
+  text-align: center;
+}
 .about-p {
   margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+
+}
+#mailaddress {
+  color: #444444;
+  border-bottom: 0.5px #444444 solid;
+}
+#mailicon, #phoneicon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  transform: translateY(2px);
 }
 /* CONTACT */
-  #contact-info {
-
-  }
   #left-column-contact {
     width: 100%;
     position: relative;
@@ -331,16 +379,6 @@ a {
     background-size: 80px 80px;
     margin: 0 auto 0 auto;
   }
-  #contact-title {
-
-  }
-  #contact-text {
-
-  }
-  .contact-p {
-
-  }
-
   #right-column {
     width: 100%;
     position: relative;
@@ -398,7 +436,6 @@ a {
     padding: 2px 2px 2px 15px;
     box-sizing: border-box;
     font-size: 17px;
-
     height: 41px;
     display: block;
     font-family: 'Open Sans', sans-serif;
@@ -409,15 +446,6 @@ a {
     border: 1px solid #dbdbdb;
     border-radius: 2px;
     margin: 0 auto 20px auto;
-  }
-  .wrap-input:focus {
-
-  }
-  #name {
-
-  }
-  #email {
-
   }
   #message {
     width: 100%;
@@ -448,7 +476,7 @@ a {
   justify-content: flex-end;
   margin-top: 10px
   }
-  #send {
+  .send {
     display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -469,9 +497,8 @@ a {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-
 }
-#send:hover {
+.send:hover {
   background-color: #2e2e2e;
   cursor: pointer;
 }
@@ -482,11 +509,11 @@ footer {
   height: 40px;
   background-color: #2e2e2e;
   bottom: 0;
-  text-align: center;
+
 
 }
 #footer {
-  width: 205px;
+  width: 505px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -511,8 +538,60 @@ footer {
 #hidden-menu {
   display: none;
 }
+#footermenu {
+  display: block;
+  position: relative;
+  width: 50%;
+  justify-content: space-between;
+}
+#footer-text::after {
+  content: "INLI © wszystkie prawa zastrzeżone";
+}
+.footeritem {
+  position: relative;
+  margin: 0 30px 0 30px;
+  color: #cdcdcd;
+}
+.infowrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  max-height: 420px;
+  text-align: center;
+  color: #444444;
+  font-family: 'Open Sans', sans-serif;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+/* ZAMOWIENIA */
+#zamowenia-kontakt {
+  color: #444444;
+  border-bottom: 1px #2e2e2e solid;
+}
+#zamowienia-kontakt-text{
+  height: 80px;
+}
+.info-title {
+  letter-spacing: 1px;
+}
+.info-subtitle {
+  margin-top: 10px;
+}
+.info-text {
+  margin-top: 5px;
+}
+#bankaccout {
+  font-style: italic;
+}
 /* MOBILE */
 @media screen and (max-width:768px) {
+  #footer-text::after {
+    content: "INLI ©";
+  }
   #bg-home {
     position: absolute;
     width: 100%;
@@ -538,7 +617,7 @@ footer {
     width: 100%;
     height: 100%;
     background-color: white;
-    position: absolute;
+    position: fixed;
     display: block;
     z-index: 101;
     transform: translateY(-100%);
@@ -669,7 +748,7 @@ transform: rotate(0deg) scale(0.2, 0.2);
 transform: rotate(-45deg) translate(0, -1px);
 }
 /* contact */
-footer {
+#special-footer {
   position: relative;
 }
 #left-column-contact {
@@ -701,14 +780,24 @@ footer {
   margin: 0 auto 0 auto;
   background-size: 80px 80px;
 }
+.contact-p {
+  height: 100px;
+}
+#phone-wrap {
+  height: 35px;
+}
 #about-content {
   margin-top: 90px;
 }
 #about-title {
   text-align: center;
 }
-#about-text {
+#contact-text {
   width: 92%;
+  margin: 5px auto 0 auto;
+}
+#about-text {
+  width: 95%;
   margin: 5px auto 0 auto;
 }
 #button-wrap {
@@ -718,8 +807,18 @@ footer {
 /* ABOUT */
 #about-info {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
+}
+@media screen and (max-width:300px) {
+  #form-title {
+    font-size: 18px;
+  }
+}
+#phone{
+  color: rgb(68, 68, 68);
+  border-bottom: 0.2px #444444 solid;
+
 }
 /* ANIMATIONS */
 @keyframes colorchange {
