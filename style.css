@@ -164,7 +164,7 @@ a {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url('images/bg212.jpg');
+  background-image: url('images/img/toaletka-4.jpg');
   background-attachment: fixed;
   background-clip: border-box;
   background-size: cover;
@@ -274,7 +274,9 @@ a {
   text-align: center;
 }
 .content-description {
-
+text-align: center;
+margin: 10px auto 0 auto;
+letter-spacing: 0.5px;
 }
 /* ABOUT */
 #zamowienia-button-wrap {
@@ -321,8 +323,8 @@ cursor: pointer;
   margin-right: auto;
 }
 #about-image {
-  background-image: url('images/about.jpg');
-  height: 350px;
+  background-image: url('images/img/toaletka-4.jpg');
+  height: 450px;
   width: 100%;
   margin-top: 10px;
   background-position: center;
@@ -584,6 +586,45 @@ footer {
 .info-text {
   margin-top: 5px;
 }
+
+/* ZDJECIA LAMP */
+.content-images-wrap {
+  position: relative;
+  display: inline;
+  width: 100%;
+}
+.imgdesc {
+  margin: 2px 2px 2px 2px;
+  object-fit: cover;
+}
+#img-first {
+  height: 900px;
+  width: 99.5%;
+}
+#img-second {
+  height: 600px;
+  width: 37%;
+}
+#img-third {
+  width: 61.7%;
+  height: 600px;
+}
+#img-fourth {
+  width: 99.5%;
+  height: 500px;
+}
+#img-fifth {
+  width: 30%;
+  height: 500px;
+}
+#img-sixth {
+  width: 30.9%;
+  height: 500px;
+}
+#img-seventh {
+  width: 37%;
+  height: 500px;
+}
 #bankaccout {
   font-style: italic;
 }
@@ -809,6 +850,56 @@ transform: rotate(-45deg) translate(0, -1px);
   width: 100%;
   height: 600px;
 }
+
+/* ZDJECIA LAMP */
+.content-images-collage {
+  width: 90%;
+  display: block;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+.content-images-wrap {
+  position: relative;
+  display: inline;
+  width: 100%;
+  align-items: center;
+}
+.imgdesc {
+  margin: 0 auto 0 auto;
+  object-fit: cover;
+  display: inline-flex;
+align-items: center
+}
+#img-first {
+  width: 99%;
+  height: 450px;
+}
+#img-second {
+  height: 400px;
+  width: 38%;
+}
+#img-third {
+  width: 60%;
+  height: 400px;
+}
+#img-fourth {
+  width: 99%;
+  height: 300px;
+}
+#img-fifth {
+  width: 50%;
+  height: 300px;
+}
+#img-sixth {
+  width: 48%;
+  height: 300px;
+}
+#img-seventh {
+  width: 99%;
+  height: 400px;
+}
+
+/* END OF MOBILE */
 }
 @media screen and (max-width:300px) {
   #form-title {
