@@ -34,19 +34,17 @@
   </div>
   </div>
 </div>
-<script type="text/javascript">
-
-      const parallax = document.getElementById('content-home');
-      const bgHome = document.getElementById('bg-home');
-      let currentOpacity;
-
-      window.onscroll = function(){ scrolling();}
-      function scrolling() {
-        currentScroll = document.documentElement.scrollTop / 5;
-        currentOpacity = 1 - document.documentElement.scrollTop / 400;
-        parallax.style.backgroundPosition = `center ${-currentScroll}px`;
-        bgHome.style.opacity = currentOpacity;
-        console.log(currentOpacity);
-      }
-
-</script>
+<div id="social-wrap">
+<div id="social-media-footer">
+  <div class="social-icon">
+    <a href="">
+      <img src="images/facebook.png" alt="" class="icon-footer">
+    </a>
+  </div>
+  <div class="social-icon-footer">
+    <a href="">
+      <img src="images/instagram.png" alt="" class="icon-footer">
+    </a>
+    </div>
+  </div>
+</div>
